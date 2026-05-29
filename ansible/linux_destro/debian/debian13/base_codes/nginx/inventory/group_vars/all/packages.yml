@@ -1,0 +1,10 @@
+# Package List
+packages:
+    - terminator
+    - vim
+    - wget
+    - git
+    - net-tools
+    - bash-completion
+    - ansible
+    - ssh

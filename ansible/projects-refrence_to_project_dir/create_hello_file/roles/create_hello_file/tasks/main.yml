@@ -1,0 +1,33 @@
+---
+- name: Ensure Desktop directory exists
+  file:
+    path: "/home/{{ ansible_user }}/Desktop"
+    state: directory
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: "0755"
+
+- name: Create templated file on Desktop
+  template:
+    src: "hello_file.j2"
+    dest: "/home/{{ ansible_user }}/Desktop/{{ output_filename }}"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: "0644"
+
+# Other Way Statically
+# - name: Ensure Desktop directory exists
+#   file:
+#     path: "/home/nimaathari/Desktop"
+#     state: directory
+#     owner: nimaathari
+#     group: nimaathari
+#     mode: "755"
+
+# - name: Create text file on Desktop
+#   copy:
+#     dest: "/home/nimaathari/Desktop/hello_file.txt"
+#     content: "This file was created by Ansible on {{ inventory_hostname }}.\nHello dear user! I'm {{ MAIN_USER }} . \nGlad to see you're following my project in github.com \n\nMany thanks and  wish to comment your feedback or give me your opinion to prove myself and share with others!"
+#     owner: nimaathari
+#     group: nimaathari
+#     mode: "0644"

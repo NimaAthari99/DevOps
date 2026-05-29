@@ -1,0 +1,19 @@
+---
+all:
+    children:
+        hello-group:
+            hosts:
+                hellovm1.nima.local:
+                    ansible_host: 192.168.56.13
+                    ansible_user: nimaathari
+                    ansible_port: 22
+                    MAIN_USER: Nima Athari
+                hellovm2.nima.local:
+                    ansible_host: 192.168.56.14
+                    ansible_user: nimaathari
+                    ansible_port: 22
+
+# `host.ini` Format
+    # [hello-group]
+    # hellovm1.nima.local ansible_host=192.168.56.13 ansible_user=nimaathari ansible_port: 22
+    # hellovm2.nima.local ansible_host=192.168.56.14 ansible_user=nimaathari ansible_port: 22

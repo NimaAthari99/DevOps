@@ -1,0 +1,6 @@
+---
+# HelloVM1 FQDN Variables
+sub: hellovm1
+domain: nima
+tld: local
+

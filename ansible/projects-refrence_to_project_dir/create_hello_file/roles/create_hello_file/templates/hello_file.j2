@@ -1,0 +1,16 @@
+This file was created by Ansible on {{ inventory_hostname }}.
+Hello dear user! I'm {{ MAIN_USER }} .
+
+Glad to see you're following my project in github.com 
+Many thanks and  wish to comment your feedback or give me your opinion to prove myself and share with others!
+Will be thankfull to give me your recommendations and help me to make projects better!
+
+Hostname: {{ inventory_hostname }}
+FQDN: {{ ansible_facts['fqdn'] }}
+
+IP Address: {{
+    ansible_facts['default_ipv4']['address']
+    if 'default_ipv4' in ansible_facts else 'No IPv4 detected'
+}}
+
+Generated at: {{ ansible_facts['date_time']['date'] }} {{ ansible_facts['date_time']['time'] }}

@@ -1,0 +1,24 @@
+---
+- name: Create Hello file on Desktop for nimaathari
+  hosts: hello-group
+  become: yes
+  roles:
+    - create_hello_file
+
+# Other way to config
+  # tasks:
+    # - name: Ensure Desktop directory exists
+    #   file:
+    #     path: "/home/nimaathari/Desktop"
+    #     state: directory
+    #     owner: nimaathari
+    #     group: nimaathari
+    #     mode: "755"
+
+    # - name: Create text file on Desktop
+    #   copy:
+    #     dest: "/home/nimaathari/Desktop/hello_file.txt"
+    #     content: "This file was created by Ansible on {{ inventory_hostname }}.\nHello dear user! I'm {{ MAIN_USER }} . \n\nGlad to see you're following my project in github.com \nMany thanks and  wish to comment your feedback or give me your opinion to prove myself and share with others! \nWill be thankfull to give me your recommendations and help me to make projects better!
+    #     owner: nimaathari
+    #     group: nimaathari
+    #     mode: "0644"

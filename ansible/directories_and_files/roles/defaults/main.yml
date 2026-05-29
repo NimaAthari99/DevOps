@@ -1,0 +1,7 @@
+# Default Main.yml File
+
+## Site_Name Variables
+sub: web1
+domain: nima
+tld: local
+

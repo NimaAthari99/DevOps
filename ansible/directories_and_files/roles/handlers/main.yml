@@ -1,0 +1,5 @@
+# Handler Main.yml Sample Configuration
+- name: restart nginx
+  service:
+    name: nginx
+    state: restarted

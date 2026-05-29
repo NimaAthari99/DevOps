@@ -1,0 +1,2 @@
+---
+output_filename: hello_{{ inventory_hostname }}.txt

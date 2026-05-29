@@ -1,0 +1,8 @@
+# Site_Name Variables
+sub: nginx01
+domain: nima
+tld: local
+
+sub: nginx02
+domain: nima
+tld: local

@@ -1,0 +1,16 @@
+# Packages List
+packages:
+    - vim
+    # - vi
+    # - nano
+    - wget
+    # - git
+    # - ansible
+    - net-tools
+    - bash-completion
+    # - ssh
+    # - zsh
+    # - unzip
+    # - tar
+    # - nginx
+    # - apache
