@@ -2,7 +2,7 @@
 
 ### Install requirements basic tools: 
  ```bash 
-apt install wget git vim bash-completion curl htop net-tools dnsutils atop sudo software-properties-common telnet axel jq iotop ca-certificates curl gnupg lsb-release apt-transport-https gpg -y
+    apt install wget git vim bash-completion curl htop net-tools dnsutils atop sudo software-properties-common telnet axel jq iotop ca-certificates curl gnupg lsb-release apt-transport-https gpg -y
 ``` 
 
 ##### Get gpg key and add docker repositroy: 
