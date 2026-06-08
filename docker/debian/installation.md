@@ -42,7 +42,7 @@ sudo apt-get update
 
 ### Install Docker 
 ```bash 
-apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-buildx-plugin docker-ce-rootless-extras docker-scan-plugin -y
+    apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-buildx-plugin docker-ce-rootless-extras docker-scan-plugin -y
 ``` 
 
 ### Configuration docker 
