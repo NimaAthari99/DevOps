@@ -38,7 +38,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin doc
 ## Check docker config directory 
 [[ -d /etc/docker ]] || sudo mkdir /etc/docker 
 
-sudo cat << 'EOF' >> /etc/docker/daemon.jason
+sudo cat << 'EOF' >> /etc/docker/daemon.json
 ## Add registry mirrors
 { "registry-mirrors": ["https://hub.mecan.ir","https://hub.hamdocker.ir"] } 
 EOF
