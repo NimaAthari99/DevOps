@@ -13,6 +13,7 @@
 | `docker images`                                                                                                   | Shows docker images                                                   |
 | `docker image load -i FILE.tar`                                                                                   | Load image from a .tar file                                           |
 | `docker image rm IMAGE`                                                                                           | Remove docker image                                                   |
+| `docker compose ls`                                                                                               | Show docker compose file location                                     |
 | `docker compose ps`                                                                                               | Show docker containers status                                         |
 | `docker compose ps -a`                                                                                            | Show docker containers status                                         |
 | `docker compose images`                                                                                           | Shows docker images                                                   |
