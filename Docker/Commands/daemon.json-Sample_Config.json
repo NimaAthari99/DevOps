@@ -1,0 +1,5 @@
+{
+    "bip": "172.31.254.1/24",                           // Edit docker network range
+    "registry-mirrors": ["https://repo.nima.local"],    // Set docker mirror registry
+    "insecure-registries" : [ "repo.nima.local" ]       // Set docker registry without ssl
+}

@@ -5,12 +5,21 @@
 | Command                                                              | What it does                                                                                  | When to use it                                      |
 |----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | `git config --local user.name "YOUR USER NAME"`                      | Configure your Git identity locally to use it only for this project                           | Git local setup                                     |
-| `git config --local user.email "YOUR_EMAIL@gmail.com`                     | Configure your Git identity locally to use it only for this project                           | Git local setup                                     |
+| `git config --local user.email "YOUR_EMAIL@gmail.com`                | Configure your Git identity locally to use it only for this project                           | Git local setup                                     |
 | `git status`                                                         | Shows which files are changed, staged, or untracked                                           | **Always** — before every commit                    |
 | `git log --oneline --graph --all`                                    | Show beautiful history of all branches                                                        | To see the full picture of your project             |
 | `git clone git@git.nima.local:voting-app/monorepo-voting-app.git`    | Clone remote repo to your current local directory                                             | Setting up project on local device                  |
 | `git commit -m "Clear message"`                                      | Save your staged changes with a message                                                       | After `git add`                                     |
-| `git init --initial-branch=main --object-format=sha1"`                                      |                                                        |                                      |
+| `git init`                                                           |                                                                                               |                                                     |
+| `git init --initial-branch=main --object-format=sha1"`               |                                                                                               |                                                     |
+| `git checkout`                                                       |                                                                                               |                                                     |
+| `git tag`                                                            |                                                                                               |                                                     |
+| `git rebase`                                                         |                                                                                               |                                                     |
+| `git reset`                                                          |                                                                                               |                                                     |
+| `git reset --hard`                                                   |                                                                                               |                                                     |
+| `git reset --mix`                                                    |                                                                                               |                                                     |
+| `git reset --soft`                                                   |                                                                                               |                                                     |
+| `git revert`                                                         |                                                                                               |                                                     |
 
 ## Git Add
 
