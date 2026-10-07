@@ -74,8 +74,9 @@
 - Docker Network: Bridge/None/Host/Overlay/MacVlan
 - Expose Port: Exposed port on container
 - Publish Port: Published port on host
+- Image Layers
 - .dockerignore File
-- Docker File:
+- Dockerfile File Syntaxes:
     - ARG                               # Will define some argument
     - FROM                              # Will choose our base image
     - MAINTAINER                        # Will show us who is the owner of file
@@ -92,6 +93,44 @@
     - SHELL                             # Defines shell using
     - HEALTHCHECK                       # Checking  health of image
     - ONBUILD
+    * Must be rootless
+    * Dont bind specific UID
+    * Multi stage Dockerfile
+    * Distroless and from scratch
+    * Use trusted images
+    * Update images
+    * Expose Ports
+    * Dont use  important data
+    * Minimum docker image layes
+    * Use metadata
+    * Scan images (volnabirity, virus and etc)
+
+- Docker Build File Syntaxes:
+    - build                             # Will build image
+    - command                           # Can add commands to run on container
+    - depend_on                         # Pend a container to another
+    - networks                          # Network for containers
+        - NETWORK_NAME
+        - name                          # Network name
+        - driver                        # Network type
+        - external                      # Is it accessible from outside
+    - volumes                           # Volume for containers
+        - VOLUME_NAME
+        - name                          # Network name
+        - driver                        # Network type
+        - external                      # Is it accessible from outside
+    - label                             # Label for containers
+    - environment                       # Environment variable for containers
+    - version                           # Give version to your compose file
+    - services                          # Containers are services in docker compose file
+        - SERVICE_NAME
+        - image
+        - container_name                # Name of container
+        - host_name                     # Name of container
+        - restart                       # Restart policy for container
+        - networks                      # Network for containers (Exact same as hole networks)
+        - volumes                       # Volume for containers (Exact same as hole volumes)
+
 - Multi Stage Docker File (Build)
 
 ## Orchestration
