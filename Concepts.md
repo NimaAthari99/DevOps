@@ -91,7 +91,6 @@
     - WORKIDIR                          # Sets working directory
     - STOPSIGNAL                        # Defines container kill signal
     - SHELL                             # Defines shell using
-    - HEALTHCHECK                       # Checking  health of image
     - ONBUILD
     * Must be rootless
     * Dont bind specific UID
@@ -108,7 +107,6 @@
 - Docker Build File Syntaxes:
     - build                             # Will build image
     - command                           # Can add commands to run on container
-    - depend_on                         # Pend a container to another
     - networks                          # Network for containers
         - NETWORK_NAME
         - name                          # Network name
@@ -121,7 +119,7 @@
         - external                      # Is it accessible from outside
     - label                             # Label for containers
     - environment                       # Environment variable for containers
-    - version                           # Give version to your compose file
+    - version                           # Give version of docker to your compose file
     - services                          # Containers are services in docker compose file
         - SERVICE_NAME
         - image
@@ -129,7 +127,16 @@
         - host_name                     # Name of container
         - restart                       # Restart policy for container
         - networks                      # Network for containers (Exact same as hole networks)
+        - environment                   # Environment variable for containers
+        - healthcheck                   # Checking  health of image
+            - test                      # What we want to do
+            - timeout                   # Check it based on timeoute seconds
+            - retries                   # Retry 10 times
+            - peroid                    # What times will be run
         - volumes                       # Volume for containers (Exact same as hole volumes)
+        - depend_on                     # Pend a container to another
+            - SERVICE_NAME
+            - condition                 # Define condition of dependency
 
 - Multi Stage Docker File (Build)
 

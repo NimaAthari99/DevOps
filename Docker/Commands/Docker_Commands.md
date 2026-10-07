@@ -73,12 +73,13 @@ Docker Root Directory
 | `docker compose up -d`                                                                                            | Start creating container with compose file                            |                                                           |
 | `docker compose up --force-recreate *COONTAINER_NAME`                                                             | Start creating container with compose file and recreate container     |                                                           |
 | `docker compose down`                                                                                             | Stop running container                                                |                                                           |
-| `docker compose down -V`                                                                                          | Stop running container and remove container volume                    |                                                           |
+| `docker compose down -V`                                                                                          | Stop running container and remove container volumes                   |                                                           |
 | `docker compose down --remove-orphans`                                                                            |                                                                       |                                                           |
 | `docker compose logs`                                                                                             | Show logs                                                             |                                                           |
 | `docker compose logs *COONTAINER_NAME --tail=100`                                                                 | Show COONTAINER_NAME logs                                             |                                                           |
 | `docker compose exec`                                                                                             |                                                                       |                                                           |
 | `docker compose scale`                                                                                            |                                                                       |                                                           |
+| `docker compose config`                                                                                           | Syntax check and check configs                                        |                                                           |
 
 ***[🔝 Table Of Contents](#table-of-contents)***
 
